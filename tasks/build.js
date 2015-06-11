@@ -199,7 +199,8 @@ function build(config, paths, callback) {
   var options = {
     compile: config.compile,
     cwd: config.cwd || root,
-    jvm: config.jvm
+    jvm: config.jvm,
+    flagfile: config.flagfile
   };
   if (!options.compile) {
     log.info('ol', 'No compile options found.  Concatenating ' +
